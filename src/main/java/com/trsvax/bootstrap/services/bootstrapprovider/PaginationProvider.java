@@ -75,7 +75,7 @@ public class PaginationProvider extends AbstractFrameworkProvider implements Boo
 				if ( ul != null ) {
 				Element a = element.wrap("a","href","#");
 				Element li = a.wrap("li");
-				
+				    li.attribute("class","active");
 					li.moveToBottom(ul);
 				}
 			}
